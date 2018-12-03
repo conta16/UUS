@@ -1,0 +1,5 @@
+6 - il numero di blocchi presenti tra il RdA A e quello di f non e' per forza 0, perche' A 
+    puo' contenere al suo interno altri blocchi, dai quali poi si chiama f (la chiamata f E' contenuta in A)
+    Io risponderei staticamente, anche perche' a tempo di compilazione puoi vedere quanti blocchi
+    vengono creati fra gli RdA di A e di f
+7 - 3;50
