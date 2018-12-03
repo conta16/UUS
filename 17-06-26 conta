@@ -1,0 +1,10 @@
+5 - non stampa nulla (?)
+6 - secondo me dipende dalle funzioni sovraccaricate: se, ad esempio, sono (int,int) e (float,float),
+    le ultime due espressioni non sono corrette in quanto sarebbero (int,float) (non viene definita
+    la presenza di alcun cast implicito)
+7 - in_main
+8 - Imperativo: diverso da nozione di variabile in matematica: in questi linguaggi puo' essere
+                modificabile, mentre nella matematica non e' permesso.
+    Funzionale: non serve, esempio: y=f(x)+3 --> il valore di y sarebbe gia' noto facendo sempre
+                f(x)+3. Per questo motivo, in questi linguaggi, non esiste l'assegnamento
+    Logici: Non e' modificabile, ma si possono applicare sostituzioni in logica del primo ordine
