@@ -1,0 +1,12 @@
+5 - v[0]=3; v[1]=1; v[2]=2; v[3]=2; v[4]=1
+6 - og1.ref-c = 3
+    og2.ref-c = 0 -> viene rimesso in lista libera
+7 - int *x = new int; int *y = x; delete x;
+8 - display v[3];
+    v[0] -> P1;
+    v[1] -> P3 -> P2 -> P3
+    v[2] -> P4
+    
+    Il RdA P2 viene messo nella pila, solo che, vedendo che P2 ha grado di annidamento pari a 1, va a vedere in v[1],
+    solo che v[1] e' gia' occupato. Allora salva da un'altra parte il vecchio valore di v[1] (che va ripreso quando P2 finisce)
+    e ci mette dentro l'indirizzo al RdA di P2.
