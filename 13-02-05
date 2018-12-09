@@ -1,0 +1,11 @@
+5 - PL1
+6 - Aliasing: quando piu' nomi simbolici indicano la stessa locazione in memoria. Causa problemi perche' facendo operazioni
+              su una variabile, si cambia anche l'altra. Direi che e' possibile, ma non per tutti i casi: a tempo di 
+              compilazione potrei vedere:
+                                int *x = new int;
+                                int *y = x; -> aliasing
+              pero', potrei fare un vettore v di n elementi, dichiarare un puntatore p e, alla prima occorrenza di un numero
+              pari (numeri messi a runtime dall'utente), p = v[i]; questo caso di aliasing non si riesce a vedere perche' dipende
+              dal runtime
+7 - 5;1;2;10
+8 - 7;10;15
