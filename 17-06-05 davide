@@ -1,0 +1,21 @@
+5.
+
+main:   |n=10    |
+        |x=20    | <---|
+foo:    |n=20    |     | <-| 
+        |f= ->   | <g, |>  |
+foo:    |n=10    |         |    a questo punto write(f()) chiama h nell'ambiente della prima chiamata di foo 
+        |f= ->   |     <h, |>   ed il valore di n viene risolto con quello ivi presente: 20.
+h:      |        |
+ 
+6. questo esercizio è ovunque, mi rifiuto di farlo
+
+7.  pippo.f(3)-> pippo.g(3) -> 100*3 -> 300
+    pippo.x -> 10 (per ragioni di shadowing)
+    pippo.f(3)+pippo.x=310
+    
+    ogg |*vtable | ----> |f       |
+        |x=10    |       |g       |  riscritta
+        |x       |       |p       |
+        |y       |       |h       |
+        |x=100   |
