@@ -1,0 +1,12 @@
+5 - No perche' viene interpretato un compilatore che traduce da L a L1, che a sua volta
+    cerca di compilare un compilatore gia' scritto in L1
+
+6 - Si' perche' nel linguaggio ci possono essere comportamenti non definiti (o definiti dall'implementazione),
+    ma lasciati alla libera interpretazione del compilatore. In questo caso, 
+    puo' darsi che il linguaggio non specifichi l'ordine di esecuzione dei comandi, soprattutto 
+    di quello in riga 7: x puo' avere valore 4 oppure 5, dipende se viene letto da sx oppure da dx
+
+7 - 0 se y>0
+    2 se y<=0
+
+8 - sub; sub; super; sub
