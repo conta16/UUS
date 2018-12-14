@@ -1,0 +1,8 @@
+5 - Si perche' le chiamate ricorsive creano nuovi RdA che sono tutti allo stesso livello di annidamento.
+
+6 - 16
+
+7 - numero oggetti: 4
+    numero contatori (in ordine di creazione oggetto): 1,1,2,1
+
+8 - non definito, causa print di oggetto
