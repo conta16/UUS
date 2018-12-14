@@ -1,0 +1,19 @@
+5. Se il compilatore è molto buono di certo si rende conto della ricorsione in coda, per cui, se è possibile farlo,
+   per questa funzione utilizza un solo record di attivazione allocato staticamente, mentre per le procedure del
+   medesimo codice che non utilizzano ricorsione in coda, utilizzare lo stack; tuttavia,
+   se il compilatore è molto bravo con le inferenze, si rende facilente conto che la computazione di questa funzione risulta
+   sempre f=(n+1)+5*m, quindi può fare l'inlining di queta espressione adogni occorrenza di f.
+   In realtà mi sono abbastanza documentato e certi compilatori cazzuti quando vedono codice con tail recursion li traducono in
+   cicli nel corpoo del codice
+   
+6. Se il linguaggio non ammette coerizioni ha abbastanza senso pensare che le uniche due operazioni possibili siano:
+   (int)+(int) e (float)+(float), ma se sono consentite le coercizioni, l'interprete od il compilatore interpreteranno
+   (float)+(int) o (int)+(float) aggingendo a queste espressioni del codice che converte la rappresentazione dell'intero
+   da complemento a due alla rappresentazione a virgloa mobile ed applicherà (float)+(float)
+
+7. in g (Y è superclasse di X)
+
+8. 20
+   751
+   5
+   22
