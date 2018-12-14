@@ -19,3 +19,11 @@ h:      |        |
         |x       |       |p       |
         |y       |       |h       |
         |x=100   |
+
+    Conta: penso tu abbia confuso le richieste del problema, non chiede una vtable ma la lista concatenata...
+           Io lo fare cosi:
+           pippo -> | *list   | -> | *list | -> | *list | -> |  f  |
+           ogg   -> | x = 10  |    |  g    |    |  g    |    |  g  |
+                    | x       |    |  h    |    |  p    |
+                    | y       |
+                    | x = 100 |
