@@ -1,0 +1,26 @@
+2 - I interprete scritto in L per L
+
+3 - sesta linea: ogg1:1  ogg2:1  ogg3:1
+    nona linea : ogg1:0  ogg2:2  ogg3:0 (considerando che dopo la nona linea ci sia la chiusura del blocco e 
+                                         garbage collector subito in azione)
+
+4 - 1;1
+
+5 - float f (float x, float y) -> e' presente la coercizione: anche se passo int, mi viene messo in float
+    oppure, ci possono essere 2 funzioni f (overloading)
+    
+6 - Esempio c:
+             typedef int numero1;
+             typedef int numero2;
+                  ho uguaglianza strutturale (sono entrambi int) ma non nominale (hanno 2 tipi diversi)
+             
+             float - int
+             double - int
+             
+7 - da sx a dx: 17
+    da dx a sx: 14
+    Ovviamente sono diversi perche' cambia x a seconda di come viene letto il comando
+
+8 - Probabilmente la prima funzione viene riconosciuta come tail-recursive e l'altra no (perche' l'operazione di 
+    moltiplicazione viene fatta con il valore di ritorno). Quindi, la seconda va in stack-overflow perche' continua
+    ad allocare nello heap RdA, facendo crescere l'heap verso l'alto e facendolo collidere con lo spazio per lo stack
