@@ -1,0 +1,20 @@
+2 - Ha senso, il risultato dovrebbe essere C scritto in L2 da L1 a L2
+
+3 - In entrambi i casi viene 0 (ho letto che nel passaggio per nome, l'espressione passata come parametro attuale
+    non viene valutata, ma viene valutata solo quando appare come parametro formale. Quindi omega non viene mai chiamato)
+
+4 - Deve essere dinamico, perche' per allocazione/deallocazione esplicita della memoria si possono creare strutture dati di 
+    dimensione variabile, cosa che invece non si puo' fare se la memoria e' gestita staticamente
+    
+5 - PRDA + OFST + i*4byte +2byte, con i indicizzato da 0 a 9
+
+6 - in_g
+
+7 - livelli di annidamento (considero ambiente globale con livello 0):
+        f:1   g:2   h:2   l:3
+    quindi:
+        0:global  1:f  2:empty  3:empty
+        0:global  1:f  2:g      3:empty
+        0:global  1:f  2:h(g)   3:empty
+        0:global  1:f  2:h(g)   3:l
+        0:global  1:f  2:g(h(g)) 3:l
